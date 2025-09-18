@@ -1,0 +1,127 @@
+
+.campaign-container {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #f4fdf7; 
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.campaign-section {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.campaign-section .campaign-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.campaign-title h2 {
+  font-size: 2rem;
+  color: #1b7f3b;
+  border-bottom: 2px solid #1b7f3b;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.campaign-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.campaign-section.right .campaign-text {
+  order: 1;
+}
+
+.campaign-section.right .campaign-image {
+  order: 2;
+}
+
+.campaign-section.left .campaign-text {
+  order: 2;
+}
+
+.campaign-section.left .campaign-image {
+  order: 1;
+}
+
+.campaign-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.campaign-text h4 {
+  font-size: 1.2rem;
+  color: #1b7f3b;
+  margin: 1rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.campaign-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.campaign-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.campaign-image img {
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.campaign-image img:hover {
+  transform: scale(1.03);
+}
+
+.campaign-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding-top: 1.5rem;
+}
+
+.campaign-controls button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  background-color: #1b7f3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.campaign-controls button:hover {
+  background-color: #14632f;
+  transform: translateY(-2px);
+}

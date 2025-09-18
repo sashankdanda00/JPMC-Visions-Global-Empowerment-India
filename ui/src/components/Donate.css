@@ -1,0 +1,230 @@
+/* Donate.css */
+
+.donate-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e7d32; /* dark green */
+}
+
+/* Flex container for left and right sections */
+.donate-section {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Left side: donation options */
+.donate-left {
+  flex: 1 1 320px;
+  background: #e8f5e9; /* light green */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgb(46 125 50 / 0.15);
+}
+
+.donate-left h2 {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.donation-option {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: white;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.donation-option h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.donation-option p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.donation-option:hover {
+  border-color: #2e7d32;
+  background-color: #d0f0c0;
+}
+
+.donation-option.selected {
+  border-color: #2e7d32;
+  background-color: #a5d6a7;
+}
+
+/* Right side: donor form */
+.donate-right {
+  flex: 1 1 320px;
+  background: #e8f5e9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgb(46 125 50 / 0.15);
+}
+
+.donate-right h2 {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.donate-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.donate-right label {
+  font-weight: 600;
+}
+
+.donate-right input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #a5d6a7;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.donate-right input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(46, 125, 50, 0.3);
+}
+
+.donate-right input[readonly] {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+  color: #2e7d32;
+}
+
+.donate-right button {
+  margin-top: 0.5rem;
+  padding: 12px;
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-right button:hover {
+  background-color: #1b5e20;
+}
+
+/* Card payment section */
+.card-section {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #e8f5e9;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgb(46 125 50 / 0.15);
+  text-align: center;
+}
+
+.card-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.card-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-form input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #a5d6a7;
+  transition: border-color 0.3s ease;
+}
+
+.card-form input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(46, 125, 50, 0.3);
+}
+
+.card-form button {
+  margin-top: 1rem;
+  padding: 12px;
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-form button:hover {
+  background-color: #1b5e20;
+}
+
+/* Certificate section */
+.certificate-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #e8f5e9;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px rgb(46 125 50 / 0.2);
+  text-align: center;
+  color: #2e7d32;
+}
+
+.certificate-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-section p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.certificate {
+  margin-top: 1.5rem;
+  border: 3px solid #2e7d32;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: #c8e6c9;
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+@media (max-width: 768px) {
+  .donate-section {
+    flex-direction: column;
+  }
+  .donate-left,
+  .donate-right {
+    width: 100%;
+    max-width: none;
+  }
+  .card-section,
+  .certificate-section {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}

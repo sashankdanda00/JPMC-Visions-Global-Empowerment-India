@@ -1,0 +1,50 @@
+/* Layout container */
+.student-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff; /* soft blue background */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background-color: #2ecc71; /* green */
+  padding: 20px;
+  color: white;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #2ecc71;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar button:hover {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+/* Default welcome section */
+.default-section {
+  text-align: center;
+  padding-top: 100px;
+  color: #3498db;
+}

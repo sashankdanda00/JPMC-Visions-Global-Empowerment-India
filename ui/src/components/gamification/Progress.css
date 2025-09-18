@@ -1,0 +1,44 @@
+.progress-section {
+  padding: 30px;
+  background-color: #f4f8ff;
+  border-left: 6px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.progress-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.subject-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subject-bar label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.bar-wrapper {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background-color: #2ecc71;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+}

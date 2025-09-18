@@ -1,0 +1,29 @@
+.account-section {
+  background-color: #f4fefb;
+  padding: 30px;
+  border-left: 6px solid #2ecc71;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.account-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  line-height: 1.8;
+}
+
+.parent-section {
+  display: flex;
+  gap: 40px;
+}
+
+.parent-section > div {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

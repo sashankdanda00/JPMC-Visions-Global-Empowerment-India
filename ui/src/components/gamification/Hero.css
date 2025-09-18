@@ -1,0 +1,71 @@
+:root {
+  --green: #2ecc71;
+  --blue: #3498db;
+  --white: #ffffff;
+  --light-blue: #ecf6ff;
+  --dark-blue: #2c3e50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background-color: var(--green);
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 50px;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.content-area h2 {
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.content-area p {
+  font-size: 16px;
+  color: #333;
+}
