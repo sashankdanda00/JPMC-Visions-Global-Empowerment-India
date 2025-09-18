@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Marks Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="main">
+    <h2>Student Analysis</h2>
+    <form id="searchForm">
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" placeholder="Paste MongoDB _id here" required />
+      <button type="submit">Fetch Data</button>
+    </form>
+    <div id="studentDetails"></div>
+    <div id="chartSection" style="display:none;">
+      <label for="subjectSelect">Select Subject:</label>
+      <select id="subjectSelect"></select>
+      <canvas id="marksChart" width="600" height="300"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
